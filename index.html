@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
     <title>Document</title>
@@ -37,9 +38,9 @@
       </nav>
     <section class="d-flex align-items-end py-5" style="min-height: 60vh; background-image: url(./img/skate-por-do-sol.jpg); background-position: center center; background-size: cover;">           
         <div class="container">
-            <h1 class="display-3 text-light fw-bold">Escola de Skate</h1>
+            <h1 class="display-3 text-light fw-bold animate__animated">Escola de Skate</h1>
         </div>
-    </section>    
+    </section>
     <section class="container py-5">
         <div class="row">
             <div class="col-12 col-lg-6 col-xxl-6">
@@ -131,17 +132,20 @@
         <h2 class="display-6 text-center mb-3">Contato</h2>
         <div class="row">
             <div class="col-5">
-                <form class="needs-validation">
+                <form class="needs-validation" novalidate>
                     <div class="mb-3">
                       <label for="Nome" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="nome" placeholder="Nome">
+                      <input type="text" class="form-control" id="nome" placeholder="Nome" required>
                       <div class="invalid-feedback">
                         Informe seu Nome
                       </div>                                           
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Informe seu e-mail">                        
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Informe seu e-mail" required>
+                        <div class="invalid-feedback">
+                            Informe seu email
+                          </div>                        
                       </div>
                       <div class="mb-3">
                         <label for="texto" class="form-label">Mensagem</label>
@@ -164,9 +168,9 @@
                 <div class="mb-3">
                     <strong class="fs-4">Horários</strong>
                     <p class="mb-0 fs-5">De Segunda à Sexta</p>
-                    <p>Das 09h às 19h</p>
-                    <p>Sábado</p>
-                    <p>Das 09h às 17h</p>
+                    <p class="mb-0 fs-5">Das 09h às 19h</p>
+                    <p class="mb-0 fs-5">Sábado</p>
+                    <p class="mb-0 fs-5">Das 09h às 17h</p>
                 </div>
             </div>                      
         </div>
@@ -178,10 +182,11 @@
         </span>
             <img src="./img/skate.png" class="img-responsive" alt="logo">
         </div>
-    </footer>
-    
-    
+    </footer>   
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"> </script> 
+    </script>
+    <script src="./validation/form-validation.js"></script>
+    <script src="./animate.js"></script>
 </body>
 </html>
